@@ -5,10 +5,10 @@
 @section('content')
 <div class="row mb-4 align-items-center">
     <div class="col">
-        <h2 class="mb-0"><i class="bi bi-shield-lock text-primary me-2"></i>จัดการกิจกรรม</h2>
+        <h2 class="mb-0"><i class="bi bi-shield-lock text-dark me-2"></i>จัดการกิจกรรม</h2>
     </div>
     <div class="col text-end">
-        <a href="{{ route('admin.activities.create') }}" class="btn btn-primary">
+        <a href="{{ route('admin.activities.create') }}" class="btn btn-dark">
             <i class="bi bi-plus-lg me-1"></i>สร้างกิจกรรมใหม่
         </a>
     </div>
@@ -51,7 +51,7 @@
                             </td>
                             <td class="text-end pe-4">
                                 <div class="btn-group">
-                                    <a href="{{ route('admin.activities.edit', $activity) }}" class="btn btn-sm btn-outline-secondary" title="แก้ไข">
+                                    <a href="{{ route('admin.activities.edit', $activity) }}" class="btn btn-sm btn-outline-dark" title="แก้ไข">
                                         <i class="bi bi-pencil-square"></i>
                                     </a>
                                     <form action="{{ route('admin.activities.destroy', $activity) }}" method="POST" class="d-inline" onsubmit="return confirm('คุณแน่ใจหรือไม่ว่าต้องการลบกิจกรรม {{ $activity->title }}? ข้อมูลผู้ลงทะเบียนทั้งหมดจะถูกลบไปด้วย');">

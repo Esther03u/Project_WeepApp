@@ -5,12 +5,12 @@
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-8">
-        <a href="{{ route('activities.index') }}" class="btn btn-sm btn-outline-secondary mb-3">
+        <a href="{{ route('activities.index') }}" class="btn btn-sm btn-outline-dark mb-3">
             <i class="bi bi-arrow-left me-1"></i>กลับไปหน้ารายการ
         </a>
 
         <div class="card shadow-sm">
-            <div class="card-header bg-primary text-white py-3">
+            <div class="card-header bg-dark text-white py-3">
                 <h3 class="card-title mb-0">{{ $activity->title }}</h3>
             </div>
             
@@ -73,7 +73,7 @@
                         @else
                             <form action="{{ route('activities.register', $activity) }}" method="POST">
                                 @csrf
-                                <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm" onclick="return confirm('ยืนยันการลงทะเบียนกิจกรรมนี้?');">
+                                <button type="submit" class="btn btn-dark btn-lg w-100 shadow-sm" onclick="return confirm('ยืนยันการลงทะเบียนกิจกรรมนี้?');">
                                     <i class="bi bi-bookmark-check-fill me-2"></i>ลงทะเบียนเข้าร่วมกิจกรรม
                                 </button>
                             </form>

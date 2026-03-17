@@ -9,15 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Sarabun', sans-serif; }
-        .navbar-brand { font-weight: 700; font-size: 1.2rem; }
-        .card { border: none; box-shadow: 0 2px 8px rgba(0,0,0,.08); border-radius: 12px; }
+        body { background-color: #fafafa; font-family: 'Sarabun', sans-serif; color: #222; }
+        .navbar-brand { font-weight: 700; font-size: 1.2rem; color: #111 !important; }
+        .card { border: 1px solid #eaeaea; box-shadow: none; border-radius: 8px; }
         .card-header { border-radius: 12px 12px 0 0 !important; }
     </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="{{ route('activities.index') }}">
             <i class="bi bi-calendar-event-fill me-2"></i>ระบบลงทะเบียนกิจกรรม

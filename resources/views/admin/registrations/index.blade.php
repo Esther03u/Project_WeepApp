@@ -5,12 +5,12 @@
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-10">
-        <a href="{{ route('admin.activities.index') }}" class="btn btn-sm btn-outline-secondary mb-3">
+        <a href="{{ route('admin.activities.index') }}" class="btn btn-sm btn-outline-dark mb-3">
             <i class="bi bi-arrow-left me-1"></i>กลับไปหน้ารายการ
         </a>
 
         <div class="card shadow-sm mb-4">
-            <div class="card-header bg-primary text-white py-3">
+            <div class="card-header bg-dark text-white py-3">
                 <h5 class="card-title mb-0">ข้อมูลกิจกรรม: {{ $activity->title }}</h5>
             </div>
             <div class="card-body">
@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <h4 class="mb-3"><i class="bi bi-card-checklist text-primary me-2"></i>รายชื่อผู้ลงทะเบียน</h4>
+        <h4 class="mb-3"><i class="bi bi-card-checklist text-dark me-2"></i>รายชื่อผู้ลงทะเบียน</h4>
         
         <div class="card shadow-sm">
             <div class="card-body p-0">
@@ -69,7 +69,7 @@
             </div>
             @if($registrations->count() > 0)
             <div class="card-footer bg-white text-end py-3">
-                <button class="btn btn-outline-success btn-sm" onclick="window.print()">
+                <button class="btn btn-outline-dark btn-sm" onclick="window.print()">
                     <i class="bi bi-printer me-1"></i>พิมพ์รายชื่อ
                 </button>
             </div>

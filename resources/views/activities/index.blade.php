@@ -5,7 +5,7 @@
 @section('content')
 <div class="row mb-4 align-items-center">
     <div class="col">
-        <h2 class="mb-0"><i class="bi bi-calendar3 text-primary me-2"></i>กิจกรรมที่เปิดลงทะเบียน</h2>
+        <h2 class="mb-0"><i class="bi bi-calendar3 me-2"></i>กิจกรรมที่เปิดลงทะเบียน</h2>
     </div>
 </div>
 
@@ -14,7 +14,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card h-100">
                 <div class="card-header bg-white border-bottom pt-3 pb-2">
-                    <h5 class="card-title text-primary mb-1">{{ $activity->title }}</h5>
+                    <h5 class="card-title text-dark fw-bold mb-1">{{ $activity->title }}</h5>
                     <p class="text-muted mb-0 small">
                         <i class="bi bi-clock me-1"></i>{{ $activity->activity_date->format('d M Y, H:i') }} น.
                     </p>
@@ -45,7 +45,7 @@
                     @endif
                 </div>
                 <div class="card-footer bg-white border-top-0 pb-3">
-                    <a href="{{ route('activities.show', $activity) }}" class="btn btn-outline-primary w-100">
+                    <a href="{{ route('activities.show', $activity) }}" class="btn btn-outline-dark w-100 fw-medium">
                         ดูรายละเอียด <i class="bi bi-arrow-right ms-1"></i>
                     </a>
                 </div>

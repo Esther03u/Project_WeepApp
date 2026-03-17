@@ -5,13 +5,13 @@
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-8">
-        <a href="{{ route('admin.activities.index') }}" class="btn btn-sm btn-outline-secondary mb-3">
+        <a href="{{ route('admin.activities.index') }}" class="btn btn-sm btn-outline-dark mb-3">
             <i class="bi bi-arrow-left me-1"></i>กลับไปหน้ารายการ
         </a>
 
         <div class="card shadow-sm">
             <div class="card-header bg-white py-3 d-flex justify-content-between align-items-center">
-                <h4 class="card-title mb-0 text-primary"><i class="bi bi-pencil-square me-2"></i>แก้ไขกิจกรรม</h4>
+                <h4 class="card-title mb-0 text-dark fw-bold"><i class="bi bi-pencil-square me-2"></i>แก้ไขกิจกรรม</h4>
             </div>
             
             <div class="card-body p-4">
@@ -61,7 +61,7 @@
                     </div>
 
                     <div class="text-end">
-                        <button type="submit" class="btn btn-primary px-4">
+                        <button type="submit" class="btn btn-dark px-4">
                             <i class="bi bi-save me-1"></i>บันทึกการเปลี่ยนแปลง
                         </button>
                     </div>
